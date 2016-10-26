@@ -9,8 +9,7 @@ feature 'Home page' do
   #   When I visit the home page
   #   Then I see "..."
   scenario 'visit the home page' do
-    visit root_path
-    fail "Add a test to make sure we are on this page"
-    # expect(page).to have_content #...
+    visit root_path 
+    expect(page).to have_content "CoderStore"
   end
 end
