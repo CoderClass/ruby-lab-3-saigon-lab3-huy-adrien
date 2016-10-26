@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+#ruby '2.2.4'
 gem 'rails', '~> 5.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -10,6 +10,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'guard-rspec', require: false
 end
 group :development do
 
@@ -33,7 +34,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
-  gem 'guard-rails', require: false
 end
 group :test do
   gem 'capybara', '~> 2.10', '>= 2.10.1'
